@@ -1,0 +1,11 @@
+2025-05-27 15:49:53,958 - INFO - Trying to divide 10 by 2
+2025-05-27 15:49:53,958 - DEBUG - Result: 5.0
+2025-05-27 15:49:53,958 - INFO - Trying to divide 5 by 0
+2025-05-27 15:49:53,958 - ERROR - Cannot divide by zero
+Traceback (most recent call last):
+  File "c:\Users\Bhanu Sri V\Bootcamp-1\Logging\log_to_file.py", line 23, in divide
+    result = a / b
+             ~~^~~
+ZeroDivisionError: division by zero
+2025-05-27 15:49:53,964 - WARNING - This is just a test warning
+2025-05-27 15:49:53,964 - CRITICAL - Critical issue happened!

@@ -1,0 +1,17 @@
+The logging module in Python is a built-in library used to report status, errors, warnings, or debug messages in your programs — without using print() statements.
+
+Why Use logging Instead of print()?
+
+More control over output format and levels (INFO, DEBUG, ERROR)
+Logs can be saved to files
+Supports different destinations (console, file, email, etc.)
+Better for production-level code and debugging
+
+
+Logging Levels
+Level	Use Case
+DEBUG	Detailed information, mainly for debugging
+INFO	Confirmation that things work as expected
+WARNING	Something unexpected but not breaking
+ERROR	A more serious problem
+CRITICAL	Serious error, the program might crash

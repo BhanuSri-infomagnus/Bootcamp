@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="76" height="78" viewBox="0 0 76 78">
+  <defs>
+    <clipPath id="clip-Read-more-arrow">
+      <rect width="76" height="78"/>
+    </clipPath>
+  </defs>
+  <g id="Read-more-arrow" clip-path="url(#clip-Read-more-arrow)">
+    <g id="Icon_feather-arrow-up-right" data-name="Icon feather-arrow-up-right" transform="translate(-7.547 -6.547)">
+      <path id="Path_523" data-name="Path 523" d="M10.5,80.6,80.6,10.5" transform="translate(0 0)" fill="none" stroke="#007fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      <path id="Path_524" data-name="Path 524" d="M10.5,10.5H80.6V80.6" transform="translate(0 0)" fill="none" stroke="#007fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    </g>
+  </g>
+</svg>

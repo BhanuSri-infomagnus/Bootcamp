@@ -1,0 +1,86 @@
+BeautifulSoup Library Documentation
+===================================
+
+Overview
+--------
+BeautifulSoup is a Python library used for parsing HTML and XML documents.
+It creates parse trees from page source code that can be used to extract data easily. 
+BeautifulSoup is commonly used for web scraping, data extraction, and navigating, searching, and modifying parse trees.
+
+Key Features
+------------
+- Parses HTML and XML documents quickly and efficiently.
+- Provides Pythonic idioms for iterating, searching, and modifying the parse tree.
+- Supports different parsers like lxml, html5lib, and Python’s built-in html.parser.
+- Handles poorly-formed markup and fixes common errors in HTML.
+
+Installation
+------------
+Install BeautifulSoup using pip:
+
+    pip install beautifulsoup4
+
+You may also want to install a parser like lxml or html5lib for better performance:
+
+    pip install lxml html5lib
+
+Basic Usage
+-----------
+```python
+from bs4 import BeautifulSoup
+
+html_doc = """
+<html><head><title>Sample Page</title></head>
+<body>
+<p class="title"><b>Example</b></p>
+<p class="story">Once upon a time...</p>
+</body></html>
+"""
+
+soup = BeautifulSoup(html_doc, 'html.parser')
+
+# Access the title tag
+print(soup.title)
+
+# Get the text inside a tag
+print(soup.title.string)
+
+# Find all paragraph tags
+print(soup.find_all('p'))
+
+# Get the value of an attribute
+print(soup.p['class'])
+```
+
+Common Methods
+--------------
+- `BeautifulSoup(html, parser)`: Create a soup object from HTML/XML string.
+- `soup.find(tag, attrs)`: Find the first tag that matches.
+- `soup.find_all(tag, attrs)`: Find all tags that match.
+- `soup.get_text()`: Get all the text from the document.
+- `soup.select(css_selector)`: Find elements using CSS selectors.
+
+Navigating the Parse Tree
+-------------------------
+- `.parent`: Access the parent tag.
+- `.children`: Iterate over child tags.
+- `.next_sibling` / `.previous_sibling`: Navigate between siblings.
+
+Example: Extracting Data
+------------------------
+```python
+for link in soup.find_all('a'):
+    print(link.get('href'))
+```
+
+Parser Options
+--------------
+- `'html.parser'`: Python’s built-in HTML parser (default).
+- `'lxml'`: Fast and lenient parser.
+- `'html5lib'`: Most lenient, creates valid HTML5 tree.
+
+When to Use BeautifulSoup
+-------------------------
+- Web scraping and data extraction from HTML/XML.
+- Cleaning up and parsing poorly-formed markup.
+- Navigating and searching HTML/XML documents easily.
